@@ -5,7 +5,7 @@ import './Home.css'
 const Home = () => {
   return (
     <div className="home-wrapper">
-      <video autoPlay loop muted className='video'>
+      <video autoPlay loop muted playsInline className='video'>
         <source src={homeVideo} type="video/mp4"/>
       </video>
       <div className="overlay"></div>

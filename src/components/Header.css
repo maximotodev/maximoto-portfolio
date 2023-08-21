@@ -2,15 +2,16 @@
     padding: 1em;
     background-color: #212121;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
+    border: 1px solid cyan;
 }
 
 .logo-wrapper {
     text-decoration: none;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     gap: 5px;
     align-items: center;
     justify-content: center;
@@ -19,7 +20,7 @@
 
 .hamburger {
     /* border: 1px solid green; */
-    z-index: 1;
+    /* z-index: 2; */
     /* border-radius: 50%; */
     /* align-self: flex-end; */
 }
@@ -35,19 +36,24 @@
     text-transform: uppercase;
 }
 
+.navbar-wrapper {
+    /* border: 1px solid magenta; */
+    display: flex;
+    flex-direction: column;
+}
+
 .navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100vh;
-    display: none;
+    height: 100dvh;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 2em;
-    background-color: #110e0ecf;
-    /* border: 1px solid red; */
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    padding: 3em;
+    background-color: #212121d0;
 }
 
 .navlink {
@@ -55,7 +61,7 @@
     padding: 0.5em;
     text-decoration: none;
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .navlink:hover {

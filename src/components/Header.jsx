@@ -16,13 +16,14 @@ const Header = () => {
       if(!navbarRef.current.contains(e.target)) {
         setOpen(false);
         console.log(navbarRef.current)
+        console.log(isOpen)
       }
     };
 
-    document.addEventListener('mousedown', handler);
+    document.addEventListener('click', handler);
 
     return() => {
-      document.removeEventListener('mousedown', handler);
+      document.removeEventListener('click', handler);
     }
 
   })
@@ -46,11 +47,11 @@ const Header = () => {
         <img className="img-logo" src={logoImg} alt="logo" />
         <h1 className="company-name">maximoto</h1>
       </Link>
-      <div className="hamburger">
+      <div ref={navbarRef} className="navbar-wrapper">
+        <div className="hamburger">
         <Hamburger size={25} easing="ease-in" color="#ff5722" toggled={isOpen} toggle={setOpen} />
-      </div>
-      <nav
-        ref={navbarRef} 
+        </div>
+        <nav 
         className="navbar"
         style={isOpen ? navbarStyle : {display: 'none'} }>
         <NavLink
@@ -76,6 +77,7 @@ const Header = () => {
             style={({isActive}) => isActive ? activeStyle : null}>contact
         </NavLink>
       </nav>
+      </div>
     </header>
   )
 };
