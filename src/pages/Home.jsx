@@ -1,5 +1,7 @@
 import React from "react"
 import homeVideo from '../assets/home-video.mp4'
+import heroImg from '../assets/hero-img.png'
+import heroImg2 from '../assets/hero-img2.png'
 import './Home.css'
 
 const Home = () => {
@@ -10,8 +12,9 @@ const Home = () => {
       </video>
       <div className="overlay"></div>
       <div className="hero-wrapper">
-      <h2>Hi, I am Maximoto 👋</h2>
-      <p>Frontend Developer</p>
+        <img className="hero-img" src={heroImg} alt="Maximoto hero image" />
+        <h2>Hi, I am Maximoto 👋</h2>
+        <p>I am a software developer, aspiring cypherpunk</p>
       </div>
     </div>
   )
