@@ -3,6 +3,8 @@ import { TypeAnimation } from 'react-type-animation';
 import homeVideo from '../assets/home-video.mp4'
 import heroImg from '../assets/hero-img.png'
 import heroImg2 from '../assets/hero-img2.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTiktok } from '@fortawesome/free-brands-svg-icons'
 import './Home.css'
 
 const Home = () => {
@@ -13,6 +15,12 @@ const Home = () => {
       </video>
       <div className="overlay"></div>
       <div className="hero-wrapper">
+        <div className="social-bar">
+          <Link 
+            to='https://www.instagram.com/_alyssagrey/'>
+            <FontAwesomeIcon icon={faTiktok}/>
+          </Link>
+        </div>
         <img className="hero-img" src={heroImg} alt="Maximoto hero image" />
         {/* <h2>Hi, I am Maximoto 👋</h2>
         <p>I am a software developer, aspiring cypherpunk</p> */}
