@@ -1,7 +1,14 @@
 .footer-wrapper {
     margin-top: auto;
-    width: 100%;
+    padding: .3em;
+    /* width: 100%; */
     background-color: #212121;
     text-align: center;
-    border: pink 1px solid;
+    /* border: pink 1px solid; */
+}
+
+.text-footer {
+    color: lightgray;
+    font-size: 1rem;
+    letter-spacing: 1.3px;
 }

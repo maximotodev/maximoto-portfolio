@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer = () => {
   return (
     <div className="footer-wrapper">
-      <h3>©Maximoto</h3>
+      <p className="text-footer">Maximoto © 2023</p>
     </div>
   )
 };

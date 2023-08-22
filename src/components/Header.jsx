@@ -2,7 +2,8 @@ import { React, useEffect, useRef, useState} from "react"
 import { Link, NavLink } from 'react-router-dom'
 import './Header.css'
 import logoImg from '../assets/company-logo.png'
-import Hamburger from 'hamburger-react'
+// import Hamburger from 'hamburger-react'
+import { Divide as Hamburger } from 'hamburger-react'
 
 const Header = () => {
 
@@ -49,7 +50,7 @@ const Header = () => {
       </Link>
       <div ref={navbarRef} className="navbar-wrapper">
         <div className="hamburger">
-        <Hamburger size={25} easing="ease-in" color="#ff5722" toggled={isOpen} toggle={setOpen} />
+        <Hamburger size={25} easing="ease-in" duration={0.5}color="#ff5722" toggled={isOpen} toggle={setOpen} />
         </div>
         <nav 
         className="navbar"
