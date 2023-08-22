@@ -19,17 +19,17 @@ const Home = () => {
         <TypeAnimation
   sequence={[
     // Same substring at the start will only be typed once, initially
-    'Hi, I am Maximoto, a software developer_',
+    'Hi, I am Maximoto, a software developer',
     2000,
-    'Hi, I am Maximoto, a bitcoiner_',
+    'Hi, I am Maximoto, a bitcoiner',
     2000,
-    'Hi, I am Maximoto, an aspiring cypherpunk_',
+    'Hi, I am Maximoto, an aspiring cypherpunk',
     2000,
-    'Hi, I am Maximoto, a professional mixologist_',
+    'Hi, I am Maximoto, a professional mixologist',
     2000,
   ]}
   speed={50}
-  style={{ fontSize: '1.5rem', fontFamily: "'Press Start 2P', cursive", textAlign: 'center'}}
+  style={{ fontSize: '1.5rem', fontFamily: "'Press Start 2P', cursive", textAlign: 'center', lineHeight: '1.5'}}
   repeat={Infinity}
 />
       </div>
