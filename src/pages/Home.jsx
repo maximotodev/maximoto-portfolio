@@ -1,10 +1,10 @@
 import React from "react"
 import { TypeAnimation } from 'react-type-animation';
+import { Link } from "react-router-dom";
 import homeVideo from '../assets/home-video.mp4'
 import heroImg from '../assets/hero-img.png'
-import heroImg2 from '../assets/hero-img2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTiktok } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faGithub, faBitcoin, faDiscord } from '@fortawesome/free-brands-svg-icons'
 import './Home.css'
 
 const Home = () => {
@@ -16,9 +16,17 @@ const Home = () => {
       <div className="overlay"></div>
       <div className="hero-wrapper">
         <div className="social-bar">
-          <Link 
-            to='https://www.instagram.com/_alyssagrey/'>
-            <FontAwesomeIcon icon={faTiktok}/>
+          <Link to='#'>
+              <FontAwesomeIcon icon={faLinkedin}/>
+          </Link>
+          <Link to='#'>
+              <FontAwesomeIcon icon={faGithub}/>
+          </Link>
+          <Link to='#'>
+              <FontAwesomeIcon icon={faBitcoin}/>
+          </Link>
+          <Link to='#'>
+              <FontAwesomeIcon icon={faDiscord}/>
           </Link>
         </div>
         <img className="hero-img" src={heroImg} alt="Maximoto hero image" />
