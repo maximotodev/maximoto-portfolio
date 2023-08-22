@@ -2,7 +2,7 @@
     padding: 1em;
     background-color: #212121;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     /* border: 1px solid cyan; */
@@ -18,20 +18,13 @@
     /* border: 1px solid cyan; */
 }
 
-.hamburger {
-    /* border: 1px solid green; */
-    /* z-index: 2; */
-    /* border-radius: 50%; */
-    /* align-self: flex-end; */
-}
-
 .img-logo {
-    width: 2.2em;
+    width: 2em;
     /* background-color: #212121; */
 }
 
 .company-name {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #ff5722;
     text-transform: uppercase;
 }
@@ -56,6 +49,10 @@
     background-color: #212121d0;
 }
 
+.navbar-closed {
+    display: none;
+}
+
 .navlink {
     color: white;
     padding: 0.5em;
@@ -67,3 +64,22 @@
 .navlink:hover {
     border: 1px solid #ff5722;
 }
+
+@media screen and (min-width: 500px) {
+    .header-wrapper {
+        /* border: 1px solid lime; */
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navbar,
+    .navbar-closed {
+        /* border: 1px solid magenta; */
+        display: flex;
+    }
+  }

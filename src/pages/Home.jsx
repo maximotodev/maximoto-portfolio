@@ -17,21 +17,22 @@ const Home = () => {
         {/* <h2>Hi, I am Maximoto 👋</h2>
         <p>I am a software developer, aspiring cypherpunk</p> */}
         <TypeAnimation
-  sequence={[
-    // Same substring at the start will only be typed once, initially
-    'Hi, I am Maximoto, a software developer',
-    2000,
-    'Hi, I am Maximoto, a bitcoiner',
-    2000,
-    'Hi, I am Maximoto, an aspiring cypherpunk',
-    2000,
-    'Hi, I am Maximoto, a professional mixologist',
-    2000,
-  ]}
-  speed={50}
-  style={{ fontSize: '1.5rem', fontFamily: "'Press Start 2P', cursive", textAlign: 'center', lineHeight: '1.5'}}
-  repeat={Infinity}
-/>
+          sequence={[
+          // Same substring at the start will only be typed once, initially
+          'Hi, I am Maximoto, a software developer',
+          2000,
+          'Hi, I am Maximoto, a bitcoiner',
+          2000,
+          'Hi, I am Maximoto, an aspiring cypherpunk',
+          2000,
+          'Hi, I am Maximoto, a professional mixologist',
+          2000,
+          ]}
+          omitDeletionAnimation={true}
+          speed={50}
+          style={{ fontSize: '1.5rem', fontFamily: "'Press Start 2P', cursive", textAlign: 'center', lineHeight: '1.5'}}
+          repeat={Infinity}
+        />
       </div>
     </div>
   )

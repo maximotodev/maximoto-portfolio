@@ -35,9 +35,10 @@ const Header = () => {
     borderBottom: '2px solid #ff5722'
   }
 
-  const navbarStyle = {
-    display: 'flex'
-  }
+  // const navbarStyle = {
+  //   display: 'flex'
+    
+  // }
 
   return (
     <header
@@ -53,8 +54,9 @@ const Header = () => {
         <Hamburger size={25} easing="ease-in" duration={0.5}color="#ff5722" toggled={isOpen} toggle={setOpen} />
         </div>
         <nav 
-        className="navbar"
-        style={isOpen ? navbarStyle : {display: 'none'} }>
+        className={isOpen ? "navbar" : "navbar-closed"}
+        // style={isOpen ? navbarStyle : {display: 'none'} }
+        >
         <NavLink
             className='navlink'
             to='/'
