@@ -5,7 +5,7 @@ import homeVideo from '../assets/home-video.mp4'
 import heroImg from '../assets/hero-linkedin-img.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faBitcoin, faDiscord } from '@fortawesome/free-brands-svg-icons'
-import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faCircleArrowRight, faAt } from "@fortawesome/free-solid-svg-icons";
 import { Slide, Fade } from "react-awesome-reveal";
 import './Home.css'
 
@@ -17,17 +17,17 @@ const Home = () => {
       </video>
       <div className="overlay"></div>
       <div className="social-bar">
-          <Link className="social-icon" to='#'>
+          <Link className="social-icon" to='https://www.linkedin.com/in/diego-aguero-90101322a/'>
               <FontAwesomeIcon icon={faLinkedin}/>
           </Link>
-          <Link className="social-icon" to='#'>
+          <Link className="social-icon" to='https://github.com/maximotodev'>
               <FontAwesomeIcon icon={faGithub}/>
           </Link>
           <Link className="social-icon" to='#'>
               <FontAwesomeIcon icon={faBitcoin}/>
           </Link>
-          <Link className="social-icon" to='#'>
-              <FontAwesomeIcon icon={faDiscord}/>
+          <Link onClick={() => window.location = 'mailto:maximotodev@proton.me'} className="social-icon" to='#'>
+              <FontAwesomeIcon icon={faAt}/>
           </Link>
         </div>
       <div className="hero-wrapper">
