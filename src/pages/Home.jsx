@@ -2,11 +2,11 @@ import React from "react"
 import { TypeAnimation } from 'react-type-animation';
 import { Link } from "react-router-dom";
 import homeVideo from '../assets/home-video.mp4'
-import heroImg from '../assets/hero-img.png'
+import heroImg from '../assets/hero-linkedin-img.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faBitcoin, faDiscord } from '@fortawesome/free-brands-svg-icons'
 import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { Slide } from "react-awesome-reveal";
+import { Slide, Fade } from "react-awesome-reveal";
 import './Home.css'
 
 const Home = () => {
@@ -41,7 +41,7 @@ const Home = () => {
           // Same substring at the start will only be typed once, initially
           'Hi, I am Maximoto, a Frontend software developer',
           3000,
-          'Hi, I am Maximoto, a bitcoin maxi',
+          'Hi, I am Maximoto, a bitcoiner',
           3000,
           'Hi, I am Maximoto, an aspiring cypherpunk',
           3000,
@@ -58,7 +58,9 @@ const Home = () => {
           <Link 
             className="circle-arrow-wrapper" to='portfolio'>
             <FontAwesomeIcon className="cta-btn" icon={faCircleArrowRight}/>
-            <p className="cta-text">Check out my work</p>
+            <Fade delay={4500}>
+              <p className="cta-text">Check out my work</p>
+            </Fade>
           </Link>
         </Slide>
     </div>
