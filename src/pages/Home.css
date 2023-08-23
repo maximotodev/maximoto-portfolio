@@ -68,10 +68,32 @@
     transform: scale(1.25);
 }
 
-.circle-arrow-btn {
-    text-decoration: none;
-    color: black;
+.circle-arrow-wrapper {
     display: flex;
-    flex-direction: column-reverse;
-    /* gap: 15px; */
+    flex-direction: column;
+    gap: 0.3em;
+    text-decoration: none;
+    /* border: 1px solid magenta; */
+}
+
+.cta-btn,
+.cta-text {
+    color: black;
+}
+
+.cta-btn {
+    font-size: 1.5rem;
+}
+
+.cta-btn:hover {
+    color: #ff5722;
+}
+
+
+.cta-text {
+    font-size: .7rem;
+}
+
+.circle-arrow-wrapper:hover {
+    transform: scale(1.1);
 }

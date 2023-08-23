@@ -53,9 +53,9 @@ const Home = () => {
           repeat={Infinity}
         />
         <Link 
-          className="circle-arrow-btn" to='portfolio'>
-          <FontAwesomeIcon style={{fontSize: '3rem'}} icon={faCircleArrowRight}/>
-          <p>Check out my work</p>
+          className="circle-arrow-wrapper" to='portfolio'>
+          <FontAwesomeIcon className="cta-btn" icon={faCircleArrowRight}/>
+          <p className="cta-text">Check out my work</p>
         </Link>
       </div>
     </div>
