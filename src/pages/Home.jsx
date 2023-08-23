@@ -53,8 +53,9 @@ const Home = () => {
           repeat={Infinity}
         />
         <Link 
-          className="social-icon" to='portfolio'>
+          className="circle-arrow-btn" to='portfolio'>
           <FontAwesomeIcon style={{fontSize: '3rem'}} icon={faCircleArrowRight}/>
+          <p>Check out my work</p>
         </Link>
       </div>
     </div>

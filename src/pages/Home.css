@@ -60,10 +60,18 @@
 .social-icon {
     /* border: 1px solid magenta; */
     padding: 1em;
-    color: white;
+    color: black;
 }
 
 .social-icon:hover {
     color: #ff5722;
     transform: scale(1.25);
+}
+
+.circle-arrow-btn {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column-reverse;
+    /* gap: 15px; */
 }
