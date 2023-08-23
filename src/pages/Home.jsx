@@ -6,6 +6,7 @@ import heroImg from '../assets/hero-img.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faBitcoin, faDiscord } from '@fortawesome/free-brands-svg-icons'
 import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Slide } from "react-awesome-reveal";
 import './Home.css'
 
 const Home = () => {
@@ -15,8 +16,7 @@ const Home = () => {
         <source src={homeVideo} type="video/mp4"/>
       </video>
       <div className="overlay"></div>
-      <div className="hero-wrapper">
-        <div className="social-bar">
+      <div className="social-bar">
           <Link className="social-icon" to='#'>
               <FontAwesomeIcon icon={faLinkedin}/>
           </Link>
@@ -30,6 +30,7 @@ const Home = () => {
               <FontAwesomeIcon icon={faDiscord}/>
           </Link>
         </div>
+      <div className="hero-wrapper">
         <img className="hero-img" src={heroImg} alt="Maximoto hero image" />
         {/* <h2>Hi, I am Maximoto 👋</h2>
         <p>I am a software developer, aspiring cypherpunk</p> */}
@@ -52,12 +53,14 @@ const Home = () => {
           style={{ fontSize: '1rem', color: "black", fontFamily: "'Press Start 2P', cursive", textAlign: 'center', lineHeight: '1.5'}}
           repeat={Infinity}
         />
-        <Link 
-          className="circle-arrow-wrapper" to='portfolio'>
-          <FontAwesomeIcon className="cta-btn" icon={faCircleArrowRight}/>
-          <p className="cta-text">Check out my work</p>
-        </Link>
       </div>
+      <Slide delay={3500}>
+          <Link 
+            className="circle-arrow-wrapper" to='portfolio'>
+            <FontAwesomeIcon className="cta-btn" icon={faCircleArrowRight}/>
+            <p className="cta-text">Check out my work</p>
+          </Link>
+        </Slide>
     </div>
   )
 };
