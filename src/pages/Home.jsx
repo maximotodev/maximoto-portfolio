@@ -16,16 +16,16 @@ const Home = () => {
       <div className="overlay"></div>
       <div className="hero-wrapper">
         <div className="social-bar">
-          <Link to='#'>
+          <Link className="social-icon" to='#'>
               <FontAwesomeIcon icon={faLinkedin}/>
           </Link>
-          <Link to='#'>
+          <Link className="social-icon" to='#'>
               <FontAwesomeIcon icon={faGithub}/>
           </Link>
-          <Link to='#'>
+          <Link className="social-icon" to='#'>
               <FontAwesomeIcon icon={faBitcoin}/>
           </Link>
-          <Link to='#'>
+          <Link className="social-icon" to='#'>
               <FontAwesomeIcon icon={faDiscord}/>
           </Link>
         </div>
@@ -35,18 +35,18 @@ const Home = () => {
         <TypeAnimation
           sequence={[
           // Same substring at the start will only be typed once, initially
-          'Hi, I am Maximoto, a software developer',
-          2000,
-          'Hi, I am Maximoto, a bitcoiner',
-          2000,
+          'Hi, I am Maximoto, a Frontend software developer',
+          3000,
+          'Hi, I am Maximoto, a bitcoin maxi',
+          3000,
           'Hi, I am Maximoto, an aspiring cypherpunk',
-          2000,
+          3000,
           'Hi, I am Maximoto, a professional mixologist',
-          2000,
+          3000,
           ]}
           omitDeletionAnimation={true}
           speed={50}
-          style={{ fontSize: '1.5rem', fontFamily: "'Press Start 2P', cursive", textAlign: 'center', lineHeight: '1.5'}}
+          style={{ fontSize: '1rem', color: "white", fontFamily: "'Press Start 2P', cursive", textAlign: 'center', lineHeight: '1.5'}}
           repeat={Infinity}
         />
       </div>

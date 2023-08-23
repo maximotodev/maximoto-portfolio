@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 .home-wrapper {
-    background-color: rgba(127, 255, 212, 0.357);
+    /* background-color: #7fffd45b; */
     /* border: 1px solid magenta; */
     padding: 1em;
     margin-top: auto;
@@ -37,4 +37,19 @@
 
 .hero-img { 
     width: 200px;
+}
+
+.social-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon {
+    /* border: 1px solid magenta; */
+    padding: 1em;
+    color: white;
+    
 }
