@@ -16,8 +16,8 @@ const Header = () => {
     let handler = (e) => {
       if(!navbarRef.current.contains(e.target)) {
         setOpen(false);
-        console.log(navbarRef.current)
-        console.log(isOpen)
+        // console.log(navbarRef.current)
+        // console.log(isOpen)
       }
     };
 

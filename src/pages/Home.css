@@ -2,10 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 .home-wrapper {
-    /* background-color: #7fffd45b; */
+    background-color: #7fffd45b;
     /* border: 1px solid magenta; */
-    padding: 1em;
+    /* padding: 1.5em; */
     margin-top: auto;
+    /* height: 100dvh; */
 }
 
 .overlay {
@@ -30,13 +31,22 @@
 
 .hero-wrapper {
     /* border: 1px solid red; */
+    padding: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.hero-img { 
-    width: 200px;
+.hero-img {
+    /* border: 1px solid red;  */
+    width: 70%;
+    max-width: 450px;
+}
+
+.typing-animation {
+    text-align: left;
+    height: 130px;
+    /* border: 1px solid red; */
 }
 
 .social-bar {
@@ -44,12 +54,16 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .social-icon {
     /* border: 1px solid magenta; */
     padding: 1em;
     color: white;
-    
+}
+
+.social-icon:hover {
+    color: #ff5722;
+    transform: scale(1.25);
 }

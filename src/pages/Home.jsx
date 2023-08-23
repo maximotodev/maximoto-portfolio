@@ -5,6 +5,7 @@ import homeVideo from '../assets/home-video.mp4'
 import heroImg from '../assets/hero-img.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faBitcoin, faDiscord } from '@fortawesome/free-brands-svg-icons'
+import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
 import './Home.css'
 
 const Home = () => {
@@ -33,6 +34,8 @@ const Home = () => {
         {/* <h2>Hi, I am Maximoto 👋</h2>
         <p>I am a software developer, aspiring cypherpunk</p> */}
         <TypeAnimation
+          wrapper='div'
+          className="typing-animation"
           sequence={[
           // Same substring at the start will only be typed once, initially
           'Hi, I am Maximoto, a Frontend software developer',
@@ -46,9 +49,13 @@ const Home = () => {
           ]}
           omitDeletionAnimation={true}
           speed={50}
-          style={{ fontSize: '1rem', color: "white", fontFamily: "'Press Start 2P', cursive", textAlign: 'center', lineHeight: '1.5'}}
+          style={{ fontSize: '1rem', color: "black", fontFamily: "'Press Start 2P', cursive", textAlign: 'center', lineHeight: '1.5'}}
           repeat={Infinity}
         />
+        <Link 
+          className="social-icon" to='portfolio'>
+          <FontAwesomeIcon style={{fontSize: '3rem'}} icon={faCircleArrowRight}/>
+        </Link>
       </div>
     </div>
   )
