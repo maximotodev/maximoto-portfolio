@@ -59,7 +59,7 @@ const Home = () => {
             className="circle-arrow-wrapper" to='portfolio'>
             <FontAwesomeIcon className="cta-btn" icon={faCircleArrowRight}/>
             <Fade delay={4500}>
-              <p className="cta-text">Check out my work</p>
+              <p className="cta-text">Check out my PoW</p>
             </Fade>
           </Link>
         </Slide>

@@ -1,0 +1,42 @@
+.portfolio-wrapper {
+    /* border: 1px solid magenta; */
+    padding: .5em;
+}
+
+.portfolio-title {
+    /* border: 1px solid lime; */
+    text-align: center;
+    margin-bottom: 1em;
+}
+.project-wrapper {
+    /* border: 1px solid red; */
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-img {
+    border-radius: 5px;
+    width: 80%;
+}
+
+.wrapper-links {
+    display: flex;
+    gap: 1em;
+}
+
+.project-link {
+    text-decoration: none;
+    border-radius: 5px;
+    padding: .25em .5em;
+    background-color: navy;
+    color: white;
+}
+
+.project-description {
+    margin-top: .7em;
+    padding: .5em;
+    border: 1px solid navy;
+    border-radius: 5px;
+}
