@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import './Portfolio.css'
+import certificationImg from '../assets/frontend-scrimba.png'
 import artistWebsiteImg from '../assets/artist-img.png'
 import quizzicalImg from '../assets/quizzical.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -24,9 +25,9 @@ const Portfolio = () => {
     description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni expedita quae, ea vero illum odio et eveniet perferendis corporis vel sapiente! Iure assumenda enim voluptatum?'
   },])
 
-  const cardEl = project.map((element) => <div key={element.title} className="project-wrapper">
-      <img className='project-img' width={125} src={element.image} alt={element.title} />
-      <h1 className="project-title">{element.title}</h1>
+  const cardEl = project.map((element) => <div key={element.title} className="projects-wrapper">
+      <h2 className="project-title">{element.title}</h2>
+      <img className='project-img' width={105} src={element.image} alt={element.title} />
       <div className="wrapper-links">
         <Link target='_blank' className="project-link"
         to={element.repo}>
@@ -40,8 +41,24 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio wrapper">
-      <h2 className="portfolio-title">Proof of Work</h2>
-        {cardEl}
+      <h1 className="portfolio-title">Proof of Work</h1>
+      <p className="portfolio-description">👋 Hello, and thank you for visiting my portfolio! This is the place where I take you on a journey through my experiences, projects, and achievements in the exciting realms of technology, programming, and Bitcoin.</p>
+      <h2 className="certifications-title">Certifications</h2>
+
+      <div className="certifications-wrapper">
+        <div className="certification-card">
+          <h4 className="certification-title">The Frontend Developer Career Path</h4>
+          <Link target="_blank"
+            className="link-to-certificate"
+            to='https://scrimba.com/certificate/uKLBwESL/gfrontend'>
+          <img className="certification-img" src={certificationImg} alt="Scrimba Frontend Developer Course certification" />
+          </Link>
+          <p className="certification-description" >The program contains 12 modules. All modules are filled with interactive coding challenges to ensure that you don't fall off the wagon. You'll learn HTML, CSS, JavaScript, React, UI design, career strategy, and more.</p>
+        </div>
+        
+      </div>
+      <h2 className="projects-title">Projects</h2>
+      {cardEl}
     </div>
   )
 };
