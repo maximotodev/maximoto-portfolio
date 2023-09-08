@@ -2,13 +2,14 @@
     /* border: 1px solid magenta; */
     /* margin-top: 5em; */
     /* padding: .5em; */
-    margin-top: 4.69em;
+    margin-top: 3.5em;
 }
 
 .portfolio-title {
     /* border: 1px solid lime; */
     text-align: center;
     margin-bottom: 1em;
+    color: #ff5722;
 }
 .project-wrapper {
     /* border: 1px solid red; */
