@@ -1,0 +1,27 @@
+.blog {
+    /* border: 1px solid magenta; */
+    margin-top: 3.5em;
+}
+
+.blog-title {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1em;
+    color: #ff5722;
+    /* background-color: #454545; */
+}
+
+.blog-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid cyan; */
+    padding: 1em;
+    background-color: lightblue;
+    text-decoration: none;
+}
+
+.blog-entry-img {
+    width: 200px;
+    border-radius: 5px;
+}

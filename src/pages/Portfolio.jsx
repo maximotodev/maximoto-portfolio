@@ -24,7 +24,7 @@ const Portfolio = () => {
     description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni expedita quae, ea vero illum odio et eveniet perferendis corporis vel sapiente! Iure assumenda enim voluptatum?'
   },])
 
-  const cardEl = project.map((element) => <div className="project-wrapper">
+  const cardEl = project.map((element) => <div key={element.title} className="project-wrapper">
       <img className='project-img' width={125} src={element.image} alt={element.title} />
       <h1 className="project-title">{element.title}</h1>
       <div className="wrapper-links">
@@ -39,7 +39,7 @@ const Portfolio = () => {
   </div>)
 
   return (
-    <div className="portfolio-wrapper">
+    <div className="portfolio wrapper">
       <h2 className="portfolio-title">Proof of Work</h2>
         {cardEl}
     </div>
