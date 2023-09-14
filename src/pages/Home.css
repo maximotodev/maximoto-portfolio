@@ -59,9 +59,9 @@
 }
 
 .social-icon {
-    /* border: 1px solid magenta; */
     padding: 1em;
     color: black;
+    text-decoration: none;
 }
 
 .social-icon:hover {
