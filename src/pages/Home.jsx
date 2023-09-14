@@ -2,7 +2,7 @@ import React from "react"
 import { TypeAnimation } from 'react-type-animation';
 import { Link } from "react-router-dom";
 import homeVideo from '../assets/home-video.mp4'
-import heroImg from '../assets/hero-linkedin-img.jpeg'
+import heroImg from '../assets/hero-img.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faBitcoin, faDiscord } from '@fortawesome/free-brands-svg-icons'
 import { faCircleArrowRight, faAt } from "@fortawesome/free-solid-svg-icons";

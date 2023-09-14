@@ -27,7 +27,7 @@ const Portfolio = () => {
 
   const cardEl = project.map((element) => <div key={element.title} className="projects-wrapper">
       <h2 className="project-title">{element.title}</h2>
-      <img className='project-img' width={105} src={element.image} alt={element.title} />
+      <img className='project-img' src={element.image} alt={element.title} />
       <div className="wrapper-links">
         <Link target='_blank' className="project-link"
         to={element.repo}>

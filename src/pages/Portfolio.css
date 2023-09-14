@@ -14,14 +14,15 @@
 }
 
 .portfolio-description {
-    /* border: 1px solid lime; */
-    padding: 1em;
+    padding: .5em;
     text-align: justify;
+    color: #565656;
+    line-height: 1.25;
 }
 
-.certifications-wrapper {
+.certifications-wrapper,
+.projects-wrapper {
     /* border: 1px solid magenta; */
-    width: 80%;
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -33,13 +34,12 @@
 
 .certifications-title,
 .projects-title {
-    align-self: flex-start;
-    font-size: 1.5rem;
+    align-self: center;
+    font-size: 1.6rem;
     color: black;
 }
 
 .certification-card {
-    /* border: #ff5722 1px solid; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,43 +51,31 @@
     text-align: center;
 }
 
-
 .link-to-certificate {
     display: flex;
     justify-content: center;
     cursor: pointer;
 }
 
-.certification-img {
-    width: 90%;
-}
 .link-to-certificate:hover {
     background-color: rgba(64, 82, 196, 0.499);
 }
 
 .certification-description {
-    font-size: .7rem;
     padding: .5em;
-}
-
-.projects-wrapper {
-    width: 80%;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    gap: .5em;
-    align-items: center;
-    background-color: lightblue;
-    border-radius: 8px;
+    text-align: justify;
+    color: #565656;
+    line-height: 1.25;
 }
 
 .project-title {
     color: #454545;
 }
 
-.project-img {
+.project-img,
+.certification-img {
     border-radius: 5px;
-    width: 70%;
+    width: 100%;
 }
 
 .wrapper-links {
@@ -107,4 +95,7 @@
     padding: .5em;
     border: 1px solid navy;
     border-radius: 5px;
+    text-align: justify;
+    color: #565656;
+    line-height: 1.25;
 }
