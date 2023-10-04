@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import './Portfolio.css'
 import certificationImg from '../assets/frontend-scrimba.png'
+import backendMeta from '../assets/backend-meta.png'
 import artistWebsiteImg from '../assets/artist-img.png'
 import quizzicalImg from '../assets/quizzical.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -55,7 +56,15 @@ const Portfolio = () => {
           </Link>
           <p className="certification-description" >The program contains 12 modules. All modules are filled with interactive coding challenges to ensure that you don't fall off the wagon. You'll learn HTML, CSS, JavaScript, React, UI design, career strategy, and more.</p>
         </div>
-        
+        <div className="certification-card">
+          <h4 className="certification-title">Introduction to Back-End Development</h4>
+          <Link target="_blank"
+            className="link-to-certificate"
+            to='https://coursera.org/verify/CLX29DGQ9THH'>
+          <img className="certification-img" src={backendMeta} alt="Introduction to Back-End Development Course Certification" />
+          </Link>
+          <p className="certification-description" >The program contains 12 modules. All modules are filled with interactive coding challenges to ensure that you don't fall off the wagon. You'll learn HTML, CSS, JavaScript, React, UI design, servers, back-end development, and more.</p>
+        </div>
       </div>
       <h2 className="projects-title">Projects</h2>
       {cardEl}
