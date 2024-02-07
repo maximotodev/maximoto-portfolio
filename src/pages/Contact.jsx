@@ -27,7 +27,7 @@ const Contact = () => {
         </div>
       <p className="contact-description">I am a software developer with an insatiable passion for all things tech and a particular fascination with the world of Bitcoin.</p>
       <p className="contact-description">When I am not crafting innovative applications for software challenges, I unleash my inner warrior through the ancient art of Thai boxing. The discipline, focus, and determination required in the martial arts world resonate with the precision and attention to detail I bring to my coding endeavors.</p>
-      <code>The LORD is King</code>
+      <code>-The LORD is King-</code>
     </div>
   )
 };
